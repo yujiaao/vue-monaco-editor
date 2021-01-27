@@ -3,10 +3,10 @@
 </template>
 
 <script>
-var debounce = require('lodash.debounce');
-var monacoLoader = require('./MonacoLoader');
+import debounce from 'lodash.debounce'
+import monacoLoader from './MonacoLoader'
 
-module.exports = {
+export default {
   props: {
     width: { type: [String, Number], default: '100%' },
     height: { type: [String, Number], default: '100%' },
@@ -126,5 +126,5 @@ module.exports = {
       }
     }
   }
-};
+}
 </script>
